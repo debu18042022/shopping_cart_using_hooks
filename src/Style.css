@@ -1,0 +1,201 @@
+
+.main_container{
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+
+.single_items{
+    /* border: 1px solid black; */
+    margin: 10px;
+    display: grid;
+    place-items: center; 
+    box-shadow: 10px 20px 10px grey;
+    /* background-color: lightgray; */
+}
+
+.product_image:hover{
+    transform: scale(1.125,1.125);
+}
+
+.product_image img{
+    width: 100%;
+    height: 30vh;
+    transition: transform 1s;
+    /* border-radius: 10%; */
+}
+
+.internal_div{
+    padding: 10px;
+}
+
+.internal_div div{
+    margin: 5px;
+}
+.internal_div button{
+    width: 20vw;
+    height: 5vh;
+    /* box-shadow: 10px 10px 30px black; */
+    border: 5px solid rgb(209, 77, 88);
+    border-radius: 5px;
+    display: grid;
+    text-align: center;
+    color:white;
+}
+
+.internal_div button:hover{
+    width: 20vw;
+    height: 5vh;
+    box-shadow: 10px 10px 30px black;
+    /* border: 5px solid lightblue; */
+    cursor:pointer; 
+    /* padding: 8px 14px 10px;  */
+}
+
+/* navbar */
+
+nav{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(187, 106, 124);
+}
+
+.nav_image_container{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
+
+
+.nav_image_container img{
+    width: 20vw;
+    height: 10vh;
+    margin-left: -15px;
+    background-color: lightblue;
+}
+
+em{
+    font-family: 'Blaka', cursive;
+    font-family: 'Bungee Inline', cursive;
+    color:white;
+}
+.navbar_links{
+    /* border: 1px solid red; */
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5vw; 
+    /* text-decoration: none; */
+}
+
+
+.navbar_links a{
+    text-decoration: none;
+}
+
+.anchorlink_div{
+    color:white;
+}
+
+/* bill generator  */
+
+.bill_main_container{
+    /* border: 1px solid black; */
+    display: grid;
+    place-items: center;
+    background-color: rgb(201, 153, 164);
+  
+}
+
+.bill_container{
+    width: 65vw;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(241, 233, 233);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    /* height: 8vh; */
+    border-radius: 7px;
+}
+
+.bill_container button{
+    margin-right:0.5rem;
+    margin-left: 0.5rem;
+    width: 4vw;
+    background-color:rgb(250, 189, 178);
+    border-radius: 5px;
+    height:4.5vh;
+    font-size: 2vw;
+}
+
+.item_name_container{
+    width:20vw;
+}
+
+
+.amount_container{
+    width: 60vw;
+    /* border: 1px solid black; */
+    display: flex;
+    /* display: grid; */
+    place-items: center;
+    height: 13vh;
+    background-color: rgb(243, 236, 236);
+    border-radius: 7.5px;
+}
+
+.Total_amount{
+    width:40vw;
+    height: 5vh;
+    background-color: white;
+    /* border: 1px solid black; */
+    text-align: center;
+    align-items: center;
+    font-weight:bold;
+    font-size: large;
+    background-color: rgb(243, 236, 236);
+}
+
+.delete_icons{
+    width:20vw;
+    height: 5vh;
+    background-color: white;
+    /* border: 1px solid black; */
+    text-align: center;
+    align-items: center;
+    font-weight:bold;
+    font-size: large;
+}
+
+.cart_empty_icons{
+    /* border: 1px solid black; */
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+    background-color: rgb(228, 199, 205);
+    
+}
+.cart_empty_icons div{
+    width: 50vw;
+    height: 20vw;
+    /* border: 1px solid black; */
+    display: grid;
+    place-items: center;
+}
+.cart_empty_icons i{
+    font-size:10vw;
+}
+
+
+@media screen and (max-width: 600px) {
+    .item_name_container{
+        margin-left: 0px;
+    }
+}
